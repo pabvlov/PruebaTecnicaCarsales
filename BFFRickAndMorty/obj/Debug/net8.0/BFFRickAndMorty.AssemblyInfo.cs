@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("BFFRickAndMorty")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+9d8e6a8821be8978979e932810324a6ca2945042")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+6ada477da88dae5a3ca0e9c33160d2ade7c1ea39")]
 [assembly: System.Reflection.AssemblyProductAttribute("BFFRickAndMorty")]
 [assembly: System.Reflection.AssemblyTitleAttribute("BFFRickAndMorty")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
