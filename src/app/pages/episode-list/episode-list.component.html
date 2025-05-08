@@ -1,0 +1,27 @@
+<section class="episodes" *ngIf="episodes() as data">
+  <div class="episode-card" *ngFor="let ep of data?.results">
+    <div class="overlay">
+
+    </div>
+    <a [routerLink]="['/episode', ep.id]">
+      <h2 class="code">{{ ep.episodeCode }}</h2>
+      <h1 class="name">{{ ep.name }}</h1>
+    </a>
+  </div>
+</section>
+
+<div class="pagination" *ngIf="episodes()">
+  <button 
+    (click)="prevPage()" 
+    [disabled]="!episodes()?.prev">
+    ← Anterior
+  </button>
+
+  <span>Página {{ episodes()?.currentPage }}</span>
+
+  <button 
+    (click)="nextPage()" 
+    [disabled]="!episodes()?.next">
+    Siguiente →
+  </button>
+</div>
