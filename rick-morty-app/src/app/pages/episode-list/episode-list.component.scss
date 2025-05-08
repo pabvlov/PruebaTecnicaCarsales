@@ -1,0 +1,132 @@
+.episodes {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  padding: 1rem;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.episode-card {
+  display: inline-block;
+  width: 100%;
+  margin-bottom: 1rem;
+}
+
+@media (max-width: 1200px) {
+  .episodes {
+    column-count: 3;
+  }
+}
+
+@media (max-width: 800px) {
+  .episodes {
+    column-count: 2;
+  }
+}
+
+@media (max-width: 500px) {
+  .episodes {
+    column-count: 1;
+  }
+}
+
+.episode-card {
+  position: relative;
+  flex: 0 1 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  background: url('../../images/rnm.webp') no-repeat center center;
+  background-size: cover;
+  border-radius: 8px;
+  overflow: hidden;
+  min-height: 150px;
+  cursor: pointer;
+  text-decoration: none;
+  transition: transform 0.2s ease-in-out;
+  z-index: 0;
+
+  &:hover {
+    transform: scale(1.02);
+  }
+
+  .overlay {
+    position: absolute;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.4);
+    z-index: 1;
+  }
+
+  .content {
+    position: relative;
+    z-index: 2;
+    padding: 1rem;
+    color: white;
+
+    .title {
+      font-size: 1.1rem;
+      font-weight: bold;
+      margin-bottom: 0.5rem;
+    }
+
+    p {
+      margin: 0;
+      font-size: 0.9rem;
+    }
+
+
+  }
+}
+
+.container {
+  width: 100%;
+  max-width: 100%;
+}
+
+h1,
+h2 {
+  color: white;
+}
+
+.code,
+.name {
+  z-index: 10;
+  text-align: center;
+  margin: 0;
+  position: relative;
+  z-index: 10;
+  color: white;
+}
+
+a {
+  margin: auto;
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 2rem;
+
+  button {
+    background-color: #318aff;
+    color: white;
+    border: none;
+    padding: 0.5rem 1.25rem;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
+
+    &:disabled {
+      opacity: 0.5;
+      cursor: not-allowed;
+    }
+  }
+
+  span {
+    font-weight: bold;
+    font-size: 1rem;
+  }
+}
