@@ -1,0 +1,6 @@
+@BFFRickAndMorty_HostAddress = http://localhost:5246
+
+GET {{BFFRickAndMorty_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
